@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head> 
+<meta charset="utf-8" />
+<Title> Noel 2021  </title>
+</head> 
+<style> 
+body {
+    background-image: url("./pnu_flou.png");  
+}
+table, th , td, tr { 
+	border: 1px solid   ;
+	border-color : grey ;
+	padding : 5px ; 
+	margin : 5px ;
+	margin : auto ; 
+	}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+div.lightbox {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.lightbox:target {
+  display: table;
+}
+
+div.lightbox figure {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+div.lightbox figure figcaption {
+  display: block;
+  margin: auto;
+  padding: 8px;
+  background-color: #ddbbff;
+  height: 250px;
+  position: relative;
+  overflow: auto;
+  border: 1px #000000 solid;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+div.lightbox figure .closemsg {
+  display: block;
+  margin: auto;
+  height: 0;
+  overflow: visible;
+  text-align: right;
+  z-index: 2;
+  cursor: default;
+}
+
+div.lightbox figure .closemsg, div.lightbox figure figcaption {
+  width: 300px;
+}
+
+.closemsg::after {
+  content: "\00D7";
+  display: inline-block;
+  position: relative;
+  right: -20px;
+  top: -10px;
+  z-index: 3;
+  color: #ffffff;
+  border: 1px #ffffff solid;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  background-color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closemsg::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.85;
+}
+.entete { 
+   width:400px;
+   margin : auto ; 
+   padding :10px ;
+   border:2px solid #000;
+   border-radius:8px ;
+   background-color : lightgrey ; 
+   text-align:center; 
+    }
+.tableau  { 
+   border-radius:2px ;
+   padding :5px ;
+   border:1px solid ; 
+   text-align:center; 
+    }
+
+
+
+
+	
+
+
+</style> 
+<script type="text/javascript">            
+ function ShowHide(elm){
+   var element = document.getElementById(elm);
+   if( element.style.display == 'none'){
+     element.style.display = 'block';
+   }else{
+     element.style.display = 'none';
+   }
+ }
+
+function ToggleAll() { 
+	normas=document.getElementsByName("norma") ; 
+	normas.forEach( function ( currentValue , currentIndex , listObj ) { 
+			   console.log(currentValue.id + ', ' + currentIndex + ', ' + this);
+			   ShowHide(currentValue.id) ; 
+			},
+	'myThisArg'
+		);
+	}
+
+
+ // Calculette Carbonne développé dans le cadre de l'activite Numerique Resposable de GRDF 
+ // Auteur Dominique Desbois
+ // novembre 2021  
+
+// constantes : 
+	
+
+ 
+	document.addEventListener('DOMContentLoaded', (event) => {
+		console.log('DOM fully loaded and parsed');
+		normas=document.getElementsByName("norma") ; 
+		normas.forEach( function ( currentValue , currentIndex , listObj ) { 
+			   console.log(currentValue.id + ', ' + currentIndex + ', ' + this);
+  },
+  'myThisArg'
+);
+			
+});
+    
+</script>
+<body>
+
+<h3> 2023  ? </h3>  
+Bande dessinée Stan Caïman (Lézard Plastique)  <br> 
+Magic plastic pâte à modeler / découper phosphorescente <br>
+Argile à modeler <br>
+Cathy vers ? : Bière chanvre <br>
+Tablette de ? -> Djamel  <br>
+Djamel vers Manu : Cuillères en verre   <br>
+Gilles vers Manu : Heart en plastique <br>
+Sculpture lave-vaisselle ( ?) <br>
+Emporte-pièce ( Cathy) + bol persan  <br>
+Cat vers Djamel : peintures + chanvre CBD <br>
+Djamel vers Gilles : spatule en bois  <br>
+Gilles vers Dom : puzzle 3D + caléidoscope  <br>
+Dom vers Luc : statue Antinoüs en plastique noir et blanc ( winner ! ) <br>
+Luc vers Dom : livre impression 3D  <br>
+Dom vers Gilles : disque vinyle recyclé en coupelle  <br>
+Gilles vers Cathy : bague ( rien à voir avec le thème) <br>
+Cathy vers Manu : CBD + bandes masquantes rouleau à dessiner  <br>
+Manu vers Djamel : 45T Plastic Bertrand  <br>
+Djamel vers Luc : Cuillère en verre <br>
+Luc vers Gilles : passoire en plastique <br>
+Gilles vers Djamel : pate à modeler  <br>
+Djamel vers Cathy : 2 tasses/mug  <br>
+Cathy vers Luc : bière CBD / fusain N&B <br>
+Dom vers Manu : lego  <br>
+Manu vers Dom : tasse café  <br>
+Gilles vers Manu : mobile Calder / ticket PMU <br>
+Manu vers Luc : peace and love (?)<br>
+Luc vers Djamel  : des lézards  <br>
+Djamel vers Dom : planche en bois  <br>
+Dom vers athy : stylo  <br>
+Cathy vers Gilles : chat ( ?) <br>
+
+
+
+</body>
+</html>
+
